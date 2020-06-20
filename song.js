@@ -40,6 +40,7 @@ song.addEventListener('timeupdate', function () {
     audioSlider.style.width = sliderPosition * 100 + "%";
 
     if (song.ended) {
+      playing = false;
       backgroundVideo.pause();
       audioPlayPause.setAttribute("name", "play");
     }
