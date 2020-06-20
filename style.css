@@ -4,7 +4,7 @@
   background-color: #000000;
 }
 
-.play-pause {
+#audio-play-pause {
     color: #ffffff;
     font-size: 35px;
     margin-top: 15px;
@@ -14,7 +14,7 @@
     margin-right: 0;
 }
 
-.volume-controls {
+.audio-volume-controls {
     display: inline-block;
     position: relative;
     bottom: 8px;
@@ -26,7 +26,7 @@
     font-size: 20px;
 }
 
-#vol-control {
+#audio-vol-control {
     margin-top: auto;
     margin-bottom: auto;
     position: relative;

@@ -17,21 +17,21 @@
             <div class="card mb-4"
                 style="box-shadow: -5px -5px 15px black; border-radius: 15px; margin: 0 auto;">
     
-                <video id="video" src="https://pixabay.com/videos/download/video-37169_medium.mp4" controls height="500px"></video>
+                <video id="background-video" src="https://pixabay.com/videos/download/video-37169_medium.mp4" loop height="500px"></video>
     
                 <div class="card-body">
-                    <div class="progress-bar">
+                    <!-- <div class="progress-bar">
                     
                         <div id="completed"></div>
                         <input type="range" min="0" max="100" value="0" id="progress">
                     
-                    </div>
+                    </div> -->
                     <!-- Play and pause button -->
-                    <ion-icon class="play-pause" name="play" id="play-or-pause"></ion-icon>
+                    <ion-icon id="audio-play-pause" name="play"></ion-icon>
 
-                    <div class="volume-controls">
+                    <div class="audio-volume-controls">
                         <ion-icon class="volume-icon" id="mute" name="volume-mute"></ion-icon>
-                        <input id="vol-control" type="range" min="0" max="100" step="1"></input>
+                        <input id="audio-vol-control" type="range" min="0" max="100" step="1"></input>
                         <ion-icon class="volume-icon" id="max-volume" name="volume-high"></ion-icon>
                     </div>
 
@@ -44,7 +44,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/fba5b46cec.js" crossorigin="anonymous"></script>
-    <script src="/js/song.js"></script>
+    <script src="./song.js"></script>
 </body>
 </html>
 
