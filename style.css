@@ -4,57 +4,67 @@
   background-color: #000000;
 }
 
+.audio-slider-container {
+  background-color:  rgb(53, 51, 51)
+}
+
+.audio-slider {
+  height: 5px;
+  background-color: teal;
+  width: 0px;
+}
+
 #audio-play-pause {
-    color: #ffffff;
-    font-size: 35px;
-    margin-top: 15px;
+  color: #ffffff;
+  font-size: 35px;
+  margin-top: 15px;
 }
 
 #song {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .audio-volume-controls {
-    display: inline-block;
-    position: relative;
-    bottom: 8px;
-    left: 30px;
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
+  left: 30px;
 }
 
 .volume-icon {
-    color: #ffffff;
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 #audio-vol-control {
-    margin-top: auto;
-    margin-bottom: auto;
-    position: relative;
-    bottom: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  bottom: 5px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type='range'] {
-      overflow: hidden;
-      width: 140px;
-      -webkit-appearance: none;
-      background-color: rgb(53, 51, 51);
-    }
-    
-    input[type='range']::-webkit-slider-runnable-track {
-      height: 10px;
-      -webkit-appearance: none;
-      color: orange;
-      margin-top: 0px;
-    }
-    
-    input[type='range']::-webkit-slider-thumb {
-      width: 10px;
-      -webkit-appearance: none;
-      height: 10px;
-      cursor: pointer;
-      /* background: #434343; */
-      background: white;
-      box-shadow: -80px 0 0 80px teal;
-    }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    width: 140px;
+    -webkit-appearance: none;
+    background-color: rgb(53, 51, 51);
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: orange;
+    margin-top: 0px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: pointer;
+    /* background: #434343; */
+    background: white;
+    box-shadow: -80px 0 0 80px teal;
+  }
 }
