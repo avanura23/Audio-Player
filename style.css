@@ -4,6 +4,11 @@
   background-color: #000000;
 }
 
+#background-video {
+  width: 100%;
+  height: 80%;
+}
+
 .audio-slider-container {
   background-color:  rgb(53, 51, 51)
 }
@@ -43,22 +48,23 @@
   bottom: 5px;
 }
 
+/* CSS for the volume controls */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="range"] {
+  #audio-vol-control {
     overflow: hidden;
     width: 140px;
     -webkit-appearance: none;
     background-color: rgb(53, 51, 51);
   }
 
-  input[type="range"]::-webkit-slider-runnable-track {
+  #audio-vol-control::-webkit-slider-runnable-track {
     height: 10px;
     -webkit-appearance: none;
     color: orange;
     margin-top: 0px;
   }
 
-  input[type="range"]::-webkit-slider-thumb {
+  #audio-vol-control::-webkit-slider-thumb {
     width: 10px;
     -webkit-appearance: none;
     height: 10px;
@@ -66,5 +72,40 @@
     /* background: #434343; */
     background: white;
     box-shadow: -80px 0 0 80px teal;
+  }
+}
+
+/* CSS for the Progress Bar */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #audio-progress {
+    overflow: hidden;
+    /* width: 140px; */
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: rgb(53, 51, 51);
+  }
+
+  #audio-progress::-webkit-slider-runnable-track {
+    height: 7px;
+    -webkit-appearance: none;
+    color: orange;
+    margin-top: 0px;
+  }
+
+  #audio-progress::-webkit-slider-thumb {
+    width: 7px;
+    -webkit-appearance: none;
+    height: 7px;
+    cursor: pointer;
+    /* background: #434343; */
+    background: white;
+    /* box-shadow: -300px 0 300px teal; */
+    box-shadow: -1000px 0 0 1000px teal;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    height: 520px;
   }
 }

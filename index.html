@@ -19,17 +19,14 @@
 
     <div class="card mb-4" style="box-shadow: -5px -5px 15px black; border-radius: 15px; margin: 0 auto;">
 
-      <video id="background-video" src="https://pixabay.com/videos/download/video-37169_medium.mp4" loop
-        height="500px"></video>
+      <video id="background-video" src="https://pixabay.com/videos/download/video-37169_medium.mp4" loop></video>
 
       <div class="card-body">
-        <!-- <div class="progress-bar">       
-          <div id="completed"></div>
-            <input type="range" min="0" max="100" value="0" id="progress">
-          </div> -->
-          <div class="audio-slider-container">
-            <div class="audio-slider"></div>
-          </div>
+        <div class="audio-progress-bar">
+          <!-- <div id="completed"></div> -->
+          <input type="range" min="0" max="100" value="0" id="audio-progress">
+        </div>
+        
         <!-- Play and pause button -->
         <ion-icon id="audio-play-pause" name="play"></ion-icon>
 
