@@ -53,6 +53,5 @@ song.addEventListener('timeupdate', function () {
       playing = false;
       backgroundVideo.pause();
       audioPlayPause.setAttribute("name", "play");
-      playing = false;
     }
 })
